@@ -8,10 +8,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 RUN apt-get -y install mysql-server mysql-client
-RUN /etc/init.d/mysql start
 ADD ./hautedispo.sql /tmp/hautedispo.sql
-WORKDIR /tmp
-RUN mysql -h localhost < hautedispo.sql
+RUN /usr/bin/mysqld_safe & sleep 10s && mysql < /tmp/hautedispo.sql
 RUN /etc/init.d/mysql stop
 CMD mysql --standalone
 
