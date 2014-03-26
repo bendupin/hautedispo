@@ -11,6 +11,7 @@ Cour de haute disponibilité
 
 
 
+
 Les commandes sont les suivantes :
 
 docker build –t ubuntu-nginx ubuntu-nginx
