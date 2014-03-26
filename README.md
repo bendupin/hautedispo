@@ -10,6 +10,7 @@ Cour de haute disponibilité
 -Le dossier mysql contient les fichiers de configuration du container qui à le rôle de serveur SQL.
 
 
+
 Les commandes sont les suivantes :
 
 docker build –t ubuntu-nginx ubuntu-nginx
